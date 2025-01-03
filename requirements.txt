@@ -1,0 +1,6 @@
+flask
+kafka-python
+pyspark
+elasticsearch
+pymongo
+pdfplumber
