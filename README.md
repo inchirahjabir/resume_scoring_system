@@ -7,17 +7,29 @@ This repository contains the code for a **Real-Time Resume Scoring System** that
 ## Key Technologies
 
 - **Kafka**: For streaming resume data to Spark in real-time.
+
 ![Kafka](assets/images/kafka_logo.png)
+
 - **Spark Streaming**: For processing the resumes and calculating scores.
+
 ![Spark](assets/images/spark_logo.png)
+
 - **Flask**: To provide an API for uploading resumes and interacting with the system.
+
 ![Flask](assets/images/flask_logo.png)
+
 - **MongoDB**: To store the uploaded resumes and their scores.
+
 ![MongoDB](assets/images/mongodb_logo.png)
+
 - **Elasticsearch/Kibana**: For indexing and querying the processed resumes and scores (integration currently not working as expected).
+
 ![Elastic Search](assets/images/elastic_logo.png)
+
 ![Kibana](assets/images/kibana_logo.png)
+
 - **Docker**: For easy deployment and management of required services.
+
 ![Docker](assets/images/docker_logo.png)
 
 ## Features
@@ -32,33 +44,7 @@ This repository contains the code for a **Real-Time Resume Scoring System** that
 
 The project is organized as follows:
 
-resume_scoring_system/
-│
-├── src/
-│   ├── producer/
-│   │   ├── producer.py            # Code to produce (send) resume data to Kafka
-│   ├── db/
-│   │   ├── database.py            # Database interactions (MongoDB integration, etc.)
-│   ├── streaming/
-│   │   ├── spark_streaming.py     # Spark Streaming job for real-time resume processing
-│   └── web/
-│       ├── app.py                 # Flask application for uploading resumes and interacting with the system
-│       ├── index.html             # HTML file for the web interface to upload resumes
-│
-├── assets/
-│   └── images/                    # Folder to store images
-│       ├── system_architecture.png
-│       ├── resume_workflow.png
-│       └── another_image.png
-│
-├── project_report.pdf         # PDF report for the project
-│
-├── venv/                          # Virtual environment for the project
-│
-├── .env                            # Contains environment variables for Kibana, Elasticsearch, and Kafka
-├── docker-compose.yml              # Docker Compose file for Kafka, Elasticsearch, and Kibana containers
-├── requirements.txt                # Python dependencies
-├── README.md                       # Project documentation (this file)
+![Project Structure](assets/images/project_structure.png)
 
 
 ## Setup and Installation
